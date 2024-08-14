@@ -1,6 +1,6 @@
 # ![logo javascript](./img/logo_javascript.png) _JavaScript_ con Jon Mircha ![logo javascript](./img/learning.png)
 
-**_JavaScript_** es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
+![logo javascript](./img/logo_javascript_3.png) es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
 
 1. **Lenguaje de Script:** Originalmente diseñado para ejecutarse en el navegador web, permitiendo la manipulación del contenido HTML y la interacción con el usuario.
 
@@ -60,7 +60,7 @@ const UNA_CONSTANTE = "Soy una constante";
 PI = 3.1415926;
 ```
 
-**Nota:** El identificador se escribe todo en mayúscula y si tiene mas de dos palabras se separan con guión bajo.
+**Nota:** El identificador se escribe todo en mayúscula y si tiene más de dos palabras se separan con guión bajo.
 
 ---
 
@@ -180,7 +180,7 @@ Recomendación para tener una buena estructura y organización de nuestro códig
 
 **Nota**:
 
-Información adaptada para fines educativos mediante la creación de un resumen personal, la cual esta basada de las siguientes fuentes:
+Información adaptada para fines educativos mediante la creación de un resumen personal, el cual esta basado de las siguientes fuentes:
 
 - https://jonmircha.com/cursos
 - https://jonmircha.com/javascript

@@ -1,4 +1,4 @@
-# Aprendiendo _JavaScript_ con Jhon Mircha
+# Aprendiendo  ![logo javascript](./img/logo_javascript_3.png) _JavaScript_ con Jhon Mircha
 
 **_JavaScript_** es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
 
@@ -42,7 +42,7 @@ var c = 12
 
 En este caso nos da un error de sintáxis, dado que se uso un caracter especial **`-`** y se uso dos veces el mismo identificador `var c`.
 
-Información tomada de:
+Información adaptada para fines educativos mediante la creación de un resumen personal, la cual esta basada de las siguientes fuentes:
 
 - https://jonmircha.com/cursos
 - https://jonmircha.com/javascript

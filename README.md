@@ -1,6 +1,6 @@
 # ![logo javascript](./img/logo_javascript.png) _JavaScript_ con Jon Mircha ![logo javascript](./img/learning.png)
 
-![logo javascript](./img/logo_javascript_3.png) es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
+![logo javascript](./img/logo_javascript_1.png) es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
 
 1. **Lenguaje de Script:** Originalmente diseñado para ejecutarse en el navegador web, permitiendo la manipulación del contenido HTML y la interacción con el usuario.
 
@@ -188,4 +188,3 @@ Información adaptada para fines educativos mediante la creación de un resumen 
 - https://github.com/jonmircha/youtube-js
 - https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA
 - https://chatgpt.com/
-

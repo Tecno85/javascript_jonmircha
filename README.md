@@ -1,4 +1,4 @@
-# Aprendiendo  ![logo javascript](./img/logo_javascript_3.png) _JavaScript_ con Jhon Mircha
+# ![logo javascript](./img/logo_javascript_3.png) _JavaScript_ con Jhon Mircha ![logo javascript](./img/learning_1.png) 
 
 **_JavaScript_** es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
 

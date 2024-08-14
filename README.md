@@ -1,4 +1,4 @@
-# ![logo javascript](./img/logo_javascript.png) _JavaScript_ con Jhon Mircha ![logo javascript](./img/learning.png)
+# ![logo javascript](./img/logo_javascript.png) _JavaScript_ con Jon Mircha ![logo javascript](./img/learning.png)
 
 **_JavaScript_** es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
 
@@ -18,15 +18,19 @@
 
 ## Escritura de Código
 
-Los **_Identificadores_**, son nombres que se le dan a las variables, funciones, o elementos como clases y objetos para poder referirse a ellos en el código y deben comenzar con:
+### Identificadores
+
+Son nombres que se le dan a las variables, funciones, o elementos como clases y objetos para poder referirse a ellos en el código y deben comenzar con:
 
 ```js
 - Una leta: o, a, e
-  var a = 2;
+  var a = 2
 - Un signo de dolar: $a
-  var $a = 5;
+  var $a = 5
 - Un guión bajo: _
   var _a = 8
+- variable que inicia con la letra n y se le asgina el nombre numero:
+  var numero = 125
 - Nunca con números ni caracteres especiales o palabras reservadas
 ```
 
@@ -38,11 +42,15 @@ var -a = 8 // SyntaxError: Unexpected token '-'
 
 En este caso nos da un error de sintáxis, dado que se uso un caracter especial (**`-`**).
 
-Para nombrar los **Archivos**:
+---
+
+### Para nombrar los **_Archivos_**:
 
 - usa **snake_case**: `mi_archivo_javascript.js`
 
-Para nombrar los **Constantes**:
+---
+
+### Para nombrar las **_Constantes_**:
 
 - usa **UPPER_CASE**:
 
@@ -51,6 +59,126 @@ const UNA_CONSTANTE = "Soy una constante";
 
 PI = 3.1415926;
 ```
+
+**Nota:** El identificador se escribe todo en mayúscula y si tiene mas de dos palabras se separan con guión bajo.
+
+---
+
+### Para nombrar las **_Clases_**:
+
+- Usa **UpperCamelCase**:
+
+```js
+class SerHumano { = (nombre, genero) {
+  this.nombre = nombre;
+  this.genero = genero;
+  }
+
+  miNombreEs () {
+    return `Mi nombre es ${this.nombre}`;
+  }
+
+}
+```
+
+**Nota:** En este caso el identificador debe llevar la primera letra de cada palabra en mayúscula.
+
+---
+
+### Usa **lowerCamelCase**:
+
+- Para nombrar un **_Objeto_**:
+
+```js
+const unObjeto = {
+  nombre: "Jonathan",
+  email: "jonmircha@gmail.com",
+};
+```
+
+- Para nombrar valores **_Primitivos_**:
+
+```js
+let unaCadena = "Hola Mundo";
+(unNumero = 19), (unBoolean = true);
+```
+
+- Para nombrar **_Funciones_**:
+
+```js
+function Hola Mundo(nombre) {
+  alert('Hola mundo ${nombre}');
+}
+  holaMundo("Jonathan");
+```
+
+- Para nombrar **_Instancias_**:
+
+```js
+const ajax = new XHLHttpRequest(),
+  jon = new SerHumano("Jonathan", "Hombre");
+```
+
+**Nota** : En el caso que el identificador sea una sola palabra, esta inicia en minúscula, en el caso que este compuesta por más de dos palabras, estas deben llevar la primera letra en mayúscula.
+
+---
+
+### _Palabras Reservadas_
+
+```js
+A: abstract
+B: boolean, break, byte
+C: case, catch, char, class, const, continue
+D: debugger, default, delete, do, double
+E: else, enum, export, extends
+F: false, final, finally, float, for, function
+G: goto
+I: if, implements, import, in, instanceof, int, interface
+L: let, long
+N: native, new, null
+P: package, private, protected, public
+R: return
+S: short, static, super, switch, synchronized
+T: this, throw, throws, transient, true, try, typeof
+V: var, volatile, void
+W: while, with
+```
+
+**Nota**: JavaScript no permite el uso de palabras reservadas para los identificadores.
+
+---
+
+## Ordenamiento de Código
+
+Recomendación para tener una buena estructura y organización de nuestro código.
+
+1. **Importación de Módulos**
+1. **Declaración de Variables**
+1. **Declaración de Funciones**
+1. **Ejecución de Código**
+
+## Tipos de datos en _JavaScript_
+
+**Primitivos**: Se accede directamente al valor.
+
+- string
+- number
+- boolean
+- null
+- undefined
+- Nan
+
+**Compuestos**: Se accede a la referencia del valor.
+
+- object ={}
+- array =[]
+- function () {}
+- class {}
+- etc
+
+---
+
+**Nota**:
 
 Información adaptada para fines educativos mediante la creación de un resumen personal, la cual esta basada de las siguientes fuentes:
 
@@ -61,4 +189,3 @@ Información adaptada para fines educativos mediante la creación de un resumen 
 - https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA
 - https://chatgpt.com/
 
-Quede por el video 3 en el minuto 12:55

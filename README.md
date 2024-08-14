@@ -1,4 +1,4 @@
-# ![logo javascript](./img/logo_javascript_3.png) _JavaScript_ con Jhon Mircha ![logo javascript](./img/learning_1.png) 
+# ![logo javascript](./img/logo_javascript.png) _JavaScript_ con Jhon Mircha ![logo javascript](./img/learning.png)
 
 **_JavaScript_** es un lenguaje de programación versátil y popular que se utiliza principalmente para el desarrollo web. Permite a los desarrolladores agregar interactividad y funcionalidades dinámicas a las páginas web. Aquí están los puntos clave:
 
@@ -8,7 +8,7 @@
 
 1. **Funciona en el Navegador y en el Servidor:** Aunque tradicionalmente se usa en el navegador, JavaScript también se puede ejecutar en el servidor mediante entornos como Node.js.
 
-1. **Interactividad Web:**Permite crear elementos interactivos como formularios dinámicos, animaciones, y actualizaciones en tiempo real sin necesidad de recargar la página.
+1. **Interactividad Web:** Permite crear elementos interactivos como formularios dinámicos, animaciones, y actualizaciones en tiempo real sin necesidad de recargar la página.
 
 1. **Sintaxis Similar a C:** La sintaxis de JavaScript es similar a la de lenguajes como C, C++, y Java, lo que facilita el aprendizaje para quienes están familiarizados con esos lenguajes.
 
@@ -18,7 +18,7 @@
 
 ## Escritura de Código
 
-Los **_identificadores_** deben comenzar con:
+Los **_Identificadores_**, son nombres que se le dan a las variables, funciones, o elementos como clases y objetos para poder referirse a ellos en el código y deben comenzar con:
 
 ```js
 - Una leta: o, a, e
@@ -27,20 +27,30 @@ Los **_identificadores_** deben comenzar con:
   var $a = 5;
 - Un guión bajo: _
   var _a = 8
-- Nunca con números o caracteres especiales
+- Nunca con números ni caracteres especiales o palabras reservadas
 ```
 
-Si se emplean numeros o caracteres especiales JavaScript nos mostrará un error de sintáxis, de igual manera no permite usar el mismo identificador dos veces.
+Si se emplean numeros, caracteres especiales o palabras reservadas (como `let, function, etc`), JavaScript nos mostrará un error de sintáxis.
 
 ```js
 var -a = 8 // SyntaxError: Unexpected token '-'
-
-var c = 10
-
-var c = 12
 ```
 
-En este caso nos da un error de sintáxis, dado que se uso un caracter especial **`-`** y se uso dos veces el mismo identificador `var c`.
+En este caso nos da un error de sintáxis, dado que se uso un caracter especial (**`-`**).
+
+Para nombrar los **Archivos**:
+
+- usa **snake_case**: `mi_archivo_javascript.js`
+
+Para nombrar los **Constantes**:
+
+- usa **UPPER_CASE**:
+
+```js
+const UNA_CONSTANTE = "Soy una constante";
+
+PI = 3.1415926;
+```
 
 Información adaptada para fines educativos mediante la creación de un resumen personal, la cual esta basada de las siguientes fuentes:
 

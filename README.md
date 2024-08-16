@@ -119,7 +119,7 @@ const ajax = new XHLHttpRequest(),
   jon = new SerHumano("Jonathan", "Hombre");
 ```
 
-**Nota** : En el caso que el identificador sea una sola palabra, esta inicia en minúscula, en el caso que este compuesta por más de dos palabras, estas deben llevar la primera letra en mayúscula.
+**Nota** : En el caso que el identificador sea una sola palabra, esta inicia en minúscula, en el caso que este compuesta por más de dos palabras, estas deben llevar la primera letra de la primera palabra en minúscula y la primera letra de las demás palabras en mayúscula.
 
 ---
 
@@ -178,9 +178,32 @@ Recomendación para tener una buena estructura y organización de nuestro códig
 
 ---
 
+## **Objeto GLobal**
+
+El objeto global en JavaScript es un objeto especial que está disponible en todo el entorno de ejecución y que actúa como un contenedor para todas las variables, funciones y objetos globales. Dependiendo del entorno en el que te encuentres (navegador, Node.js, etc.), el objeto global tiene diferentes nombres:
+
+- **En un navegador**: El objeto global es `window`. Todo lo que declares en el ámbito global (fuera de cualquier función) se convierte en una propiedad del objeto `window`.
+- En **Node.js**: El objeto global es `global`. Las variables y funciones globales se añaden como propiedades de `global`.
+
+Por ejemplo, si declaras una variable global en un entorno de navegador:
+
+```javascript
+var miVariable = 42;
+```
+
+Esta variable se puede acceder también como:
+
+```javascript
+console.log(window.miVariable); // 42
+```
+
+El objeto global facilita el acceso y manipulación de recursos compartidos en todo el entorno de ejecución.
+
+## Cadena de Texto
+
 **Nota**:
 
-Información adaptada para fines educativos mediante la creación de un resumen personal, el cual esta basado de las siguientes fuentes:
+Información adaptada para fines educativos mediante la creación de un resumen personal, el cual esta basado en las siguientes fuentes:
 
 - https://jonmircha.com/cursos
 - https://jonmircha.com/javascript
@@ -188,3 +211,4 @@ Información adaptada para fines educativos mediante la creación de un resumen 
 - https://github.com/jonmircha/youtube-js
 - https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA
 - https://chatgpt.com/
+- https://developer.mozilla.org/en-US/

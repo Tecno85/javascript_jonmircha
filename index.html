@@ -16,6 +16,57 @@
       console.log(window.hola);
       console.log(window.hello);
       // Ambito de Bloque
+      // Esto es un bloque - comentaa}rio de una línea
+      /* Esto 
+      es un comentario
+      de 
+      varias líneas      
+      */
+      var musica = "Rock";
+      console.log("Variable Música antes del Bloque",musica);
+      {
+        var musica = "Pop";
+        console.log("Variable musica dentro del bloque", musica);
+      }
+      console.log("Variable musica despues del bloque", musica);
+
+      console.log("********************************************************************");
+
+      let musica2 = "Rock";
+      console.log("Variable Música2 antes del Bloque",musica2);
+      {
+        let musica2 = "Pop";
+        console.log("Variable musica2 dentro del bloque", musica2);
+      }
+      console.log("Variable musica2 despues del bloque", musica2);
+
+      // Constantes
+
+      let a;
+      const PI = 3.1316;
+      //const NUEVE;
+      console.log(PI);
+      //PI = 3.15;
+
+      a = "Kenai";
+      console.log(a);
+
+      const objeto = {
+        nombre: "Jon", 
+        edad: 35
+      }
+
+      const colores = ["blanco","negro","azul"];
+
+      console.log(objeto);
+      console.log(colores);
+
+      objeto.correo = "jonmircha@gmail.com";
+      colores.push("anaranjado");
+
+      console.log(objeto);
+      console.log(colores);
+
     </script>
   </body>
 </html>

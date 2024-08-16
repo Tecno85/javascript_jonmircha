@@ -1,72 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundamentos JavaXcript</title>
-  </head>
-  <body>
-    <h1>Fundamentos JavaScript</h1>
-    <script>
-      var hola = "Hola Mundo";
-      let hello = "Hello World";
-      console.log(hola);
-      console.log(hello);
-      console.log(window);
-      console.log(window.hola);
-      console.log(window.hello);
-      // Ambito de Bloque
-      // Esto es un bloque - comentaa}rio de una línea
-      /* Esto 
-      es un comentario
-      de 
-      varias líneas      
-      */
-      var musica = "Rock";
-      console.log("Variable Música antes del Bloque",musica);
-      {
-        var musica = "Pop";
-        console.log("Variable musica dentro del bloque", musica);
-      }
-      console.log("Variable musica despues del bloque", musica);
 
-      console.log("********************************************************************");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundamentos JavaXcript</title>
+</head>
 
-      let musica2 = "Rock";
-      console.log("Variable Música2 antes del Bloque",musica2);
-      {
-        let musica2 = "Pop";
-        console.log("Variable musica2 dentro del bloque", musica2);
-      }
-      console.log("Variable musica2 despues del bloque", musica2);
+<body>
+  <h1>Fundamentos JavaScript</h1>
 
-      // Constantes
+  <script>
+    var hola = "Hola Mundo";
+    let hello = "Hello World";
+    console.log(hola);
+    console.log(hello);
+    console.log(window);
+    console.log(window.hola);
+    console.log(window.hello);
+    // Ambito de Bloque
+    // Esto es un bloque - comentaa}rio de una línea
+    /* Esto 
+es un comentario
+de 
+varias líneas      
+*/
+    var musica = "Rock";
+    console.log("Variable Música antes del Bloque", musica);
+    {
+      var musica = "Pop";
+      console.log("Variable musica dentro del bloque", musica);
+    }
+    console.log("Variable musica despues del bloque", musica);
 
-      let a;
-      const PI = 3.1316;
-      //const NUEVE;
-      console.log(PI);
-      //PI = 3.15;
+    console.log(
+      "********************************************************************"
+    );
 
-      a = "Kenai";
-      console.log(a);
+    let musica2 = "Rock";
+    console.log("Variable Música2 antes del Bloque", musica2);
+    {
+      let musica2 = "Pop";
+      console.log("Variable musica2 dentro del bloque", musica2);
+    }
+    console.log("Variable musica2 despues del bloque", musica2);
 
-      const objeto = {
-        nombre: "Jon", 
-        edad: 35
-      }
+    // Constantes
 
-      const colores = ["blanco","negro","azul"];
+    let a;
+    const PI = 3.1316;
+    //const NUEVE;
+    console.log(PI);
+    //PI = 3.15;
 
-      console.log(objeto);
-      console.log(colores);
+    a = "Kenai";
+    console.log(a);
 
-      objeto.correo = "jonmircha@gmail.com";
-      colores.push("anaranjado");
+    const objeto = {
+      nombre: "Jon",
+      edad: 35,
+    };
 
-      console.log(objeto);
-      console.log(colores);
+    const colores = ["blanco", "negro", "azul"];
 
-    </script>
-  </body>
+    console.log(objeto);
+    console.log(colores);
+
+    objeto.correo = "jonmircha@gmail.com";
+    colores.push("anaranjado");
+
+    console.log(objeto);
+    console.log(colores);
+
+    // Cadena de texto - Strings
+
+    let nombre = "Jon";
+    let apellido = "Mircha";
+    let saludo = new String("Hola Mundo");
+    let lorem =
+      "    En JavaScript, un String es una cadena de caracteres, es decir, una serie de letras, números o símbolos encerrados entre comillas.    ";
+
+    console.log(nombre, apellido, saludo);
+    console.log(
+      nombre.length,
+      apellido.length,
+      saludo.length,
+      lorem.includes("ivan"),
+      lorem,
+      lorem.trim(),
+      lorem.split(" "),
+      lorem.split(",")
+    );
+
+    let texto = "Hola, mundo!";
+    console.log(texto.charAt(3));
+
+    let name = "Ivan";
+    let surname = "Madrid";
+
+    // Concatenación
+
+    let saludar = "Hola mi nombre es " + name + " " + surname + ".";
+    console.log(saludar);
+
+    // Interpolación de Variables
+    // template String
+    let saludo2 = `Hola mi nombre es ${name} ${surname}.`;
+    console.log(saludo2);
+
+    let ul = `
+      <ul>
+      <li>Primavera</li>
+      <li>Verano </li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+      </ul>`;
+    console.log(ul);
+
+    // Numeros (Numbers)
+
+    let d = 2;
+    let e = new Number(1);
+    let c = 7.19;
+    let g = "5.6";
+
+    console.log(e, d);
+    console.log(c.toFixed(1));
+    console.log(c.toFixed(3));
+    console.log(parseInt(c));
+    console.log(parseFloat(c));
+    console.log(typeof c, typeof g);
+    console.log(d + e);
+    console.log(c + g);
+
+
+  </script>
+</body>
+
 </html>

@@ -199,7 +199,109 @@ console.log(window.miVariable); // 42
 
 El objeto global facilita el acceso y manipulación de recursos compartidos en todo el entorno de ejecución.
 
-## Cadena de Texto
+## Cadena de Caracteres (String)
+
+En JavaScript, un String es una cadena de caracteres, es decir, una serie de letras, números o símbolos encerrados entre comillas. Las comillas pueden ser simples ('...'), dobles ("..."), o backticks (\`...`).
+
+Ejemplos:
+
+- 'Hola' es un String.
+- "123" también es un String.
+- \`Esto es un String` es otro ejemplo de String.
+
+Los Strings se usan para representar texto y se pueden manipular con diversas funciones y métodos en JavaScript. Por ejemplo, puedes unir dos Strings con el operador +:
+
+```js
+let saludo = "Hola" + " Mundo"; // 'Hola Mundo'
+```
+
+Los objetos _**String**_ tienen propiedades y métodos:
+
+1. Son caracteristicas que definen o describen algo relacionado con el objeto(brindan información del objeto). Se pueden leer, pero no modificar.
+
+- _length_: Retorna el número de caracteres en el String.
+
+```js
+let texto = "Hola, mundo!";
+console.log(texto.length); // 12
+```
+
+2. Los Métodos son funciones que se pueden ser llamadas para realizar diversas operaciones (acciones que el objeto hace). Los métodos terminan con parentesis.
+
+- _charAt(index)_: Retorna el carácter en la posición especificada por index.
+
+```js
+let texto = "Hola, mundo!";
+console.log(texto.charAt(3)); // "a"
+```
+## Template String
+
+Un template string (o template literal) es una característica de JavaScript que permite crear cadenas de texto más flexibles y fáciles de leer, especialmente cuando necesitas incluir variables o expresiones dentro de la cadena.
+
+_Características de los Template Strings_
+
+1. _Comillas Invertidas_: Se crean utilizando comillas invertidas 
+`` en lugar de comillas simples o dobles.
+
+1. _Interpolación de Variables_: Puedes insertar variables y expresiones directamente en el string usando la sintaxis ${}.
+
+1. _Múltiples Líneas_: Permiten escribir strings que abarcan múltiples líneas sin necesidad de concatenación.
+
+Ejemplos
+
+**Interpolación de Variables**
+
+En lugar de concatenar variables con el operador +, los template strings te permiten incluirlas directamente dentro de la cadena.
+
+```js
+let nombre = "Juan";
+let edad = 30;
+
+let mensaje = `Hola, mi nombre es ${nombre} y tengo ${edad} años.`;
+console.log(mensaje); // "Hola, mi nombre es Juan y tengo 30 años."
+```
+
+**Expresiones**
+
+Puedes realizar cálculos u otras expresiones directamente dentro de ${}.
+
+```js
+let a = 5;
+let b = 10;
+
+let resultado = `La suma de 5 y 10 es ${a + b}.`;
+console.log(resultado); // "La suma de 5 y 10 es 15."
+```
+
+**Múltiples Líneas**
+
+Los template strings permiten escribir texto en varias líneas sin necesidad de usar caracteres especiales como \n.
+
+```js
+let textoLargo = `Este es un texto
+que abarca múltiples
+líneas.`;
+console.log(textoLargo);
+```
+Este código generará:
+
+```js
+Este es un texto
+que abarca múltiples
+líneas.
+```
+
+**Ventajas de los Template Strings**
+
+- **Legibilidad**: Al usar template strings, el código se vuelve más limpio y fácil de leer, especialmente cuando se combinan múltiples variables o se crean strings largos.
+
+- **Flexibilidad**: Te permite incluir expresiones complejas dentro de un string sin necesidad de concatenar varias partes.
+
+Los template strings son una poderosa herramienta en JavaScript que simplifica la creación y manipulación de cadenas de texto. ¡Son especialmente útiles para construir mensajes dinámicos o para trabajar con HTML en JavaScript!
+
+## Números (Numbers)
+
+
 
 **Nota**:
 

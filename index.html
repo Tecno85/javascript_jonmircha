@@ -121,17 +121,22 @@ varias líneas
 
     let d = 2;
     let e = new Number(1);
+    let f = 12.3456;
+    let h = 5.3434567;
     let c = 7.19;
     let g = "5.6";
 
     console.log(e, d);
-    console.log(c.toFixed(1));
-    console.log(c.toFixed(3));
-    console.log(parseInt(c));
-    console.log(parseFloat(c));
-    console.log(typeof c, typeof g);
-    console.log(d + e);
-    console.log(c + g);
+    console.log(f.toFixed(1)); // 12.3
+    // El método toFixed define cuantos numeros decimales se mostrarán. 
+    console.log(h.toFixed(3)); // 5.343
+    console.log(parseInt(c)); // 7
+    console.log(parseFloat(c)); // 7.19
+    console.log(typeof c, typeof g); // typeof, nos indica que natraleza es la variables
+    console.log(d + e); // (2 + 1) = 3
+    console.log(d + parseFloat(g)); // (2 + 5.6) = 7.6
+
+    // Casting - Hace referencia al método parseFloat() y el parsetInt() los cuales realizan el cambio de tipo de datos, de tipo string a tipo number. 
 
 
   </script>

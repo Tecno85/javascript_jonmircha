@@ -234,14 +234,15 @@ console.log(texto.length); // 12
 let texto = "Hola, mundo!";
 console.log(texto.charAt(3)); // "a"
 ```
+
 ## Template String
 
 Un template string (o template literal) es una característica de JavaScript que permite crear cadenas de texto más flexibles y fáciles de leer, especialmente cuando necesitas incluir variables o expresiones dentro de la cadena.
 
 _Características de los Template Strings_
 
-1. _Comillas Invertidas_: Se crean utilizando comillas invertidas 
-`` en lugar de comillas simples o dobles.
+1. _Comillas Invertidas_: Se crean utilizando comillas invertidas
+   `` en lugar de comillas simples o dobles.
 
 1. _Interpolación de Variables_: Puedes insertar variables y expresiones directamente en el string usando la sintaxis ${}.
 
@@ -283,6 +284,7 @@ que abarca múltiples
 líneas.`;
 console.log(textoLargo);
 ```
+
 Este código generará:
 
 ```js
@@ -300,8 +302,6 @@ líneas.
 Los template strings son una poderosa herramienta en JavaScript que simplifica la creación y manipulación de cadenas de texto. ¡Son especialmente útiles para construir mensajes dinámicos o para trabajar con HTML en JavaScript!
 
 ## Números (Numbers)
-
-
 
 **Nota**:
 

@@ -1,1 +1,1 @@
-Quede por el video 5 - Cadena de texto  minuto: 11:17
+Quede por el video 8 - Boleans minuto: Iniciando

@@ -303,6 +303,35 @@ Los template strings son una poderosa herramienta en JavaScript que simplifica l
 
 ## Números (Numbers)
 
+### Booleans
+
+
+### Null, Undefined, NaN
+
+Null = Valor primitivo que representa una variable que no tiene valor. Pero es un valor dado intencionalmente por el programador, para indicar que una variable no se le ha asignado un valor.
+
+```js
+let nulo = null;
+console.log(nulo);
+```
+
+**Undefined**: Es un valor primitivo que indica que una variable ha sido declarada pero no ha sido inicializada con ningún valor. Es un valor asignado por JavaScript, cuando detecta que una variable no tiene valor.
+
+```js
+let indefinida;
+console.log(indefinida);
+```
+
+**NaN (Not a Number)**:  Es un valor especial que representa el resultado de una operación matemática la cuál no se da mediante números válidos
+
+```js
+let noEsUnNumero = "hola" * 3.7;
+console.log(noEsUnNumero);
+```
+### Funciones
+
+
+
 **Nota**:
 
 Información adaptada para fines educativos mediante la creación de un resumen personal, el cual esta basado en las siguientes fuentes:

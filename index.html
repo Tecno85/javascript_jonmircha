@@ -138,6 +138,38 @@ varias líneas
 
     // Casting - Hace referencia al método parseFloat() y el parsetInt() los cuales realizan el cambio de tipo de datos, de tipo string a tipo number. 
 
+    // Booleans
+
+    let verdadero = true; // forma literal de escribirlo
+    let falso = false;
+    let v = Boolean(true);// forma de escribirlo mediante el constructor
+    let t = Boolean(false);
+
+    console.log(verdadero, falso);
+    console.log(typeof verdadero, typeof falso);
+    console.log(typeof v, typeof t);
+
+    // Null, undefined, NaN
+
+    // Null = Valor primitivo que representa una variable que no tiene valor. Pero es un valor dado intencionalmente por el programador, para indicar que una variable no se le ha asignado un valor. 
+
+    let nulo = null;
+    console.log(nulo);
+
+    // undefined = Es un valor primitivo que indica que una variable ha sido declarada pero no ha sido inicializada con ningún valor. Es un valor asignado por JavaScript, cuando detecta que una variable no tiene valor.
+
+    let indefinida;
+    console.log(indefinida);
+
+    // NaN (Not a Number) = Es un valor especial que representa el resultado de una operación matemática la cuál no se da mediante números válidos.
+
+    let noEsUnNumero = "hola" *  3.7;
+    console.log(noEsUnNumero);
+
+
+
+
+
 
   </script>
 </body>

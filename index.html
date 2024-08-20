@@ -163,7 +163,7 @@ varias líneas
 
     // NaN (Not a Number) = Es un valor especial que representa el resultado de una operación matemática la cuál no se da mediante números válidos.
 
-    let noEsUnNumero = "hola" *  3.7;
+    let noEsUnNumero = "hola" * 3.7;
     console.log(noEsUnNumero);
 
     // FUNCIONES
@@ -181,10 +181,10 @@ varias líneas
     // Fucniones Declaradas y Funciones Expresadas
 
     // Funcion Declarada
-    
+
     // Es un bloque de líneas de código que se ejecutan al unisono.
 
-    function estoEsUnaFuncion(){
+    function estoEsUnaFuncion() {
       console.log("Uno");
       console.log("Dos");
       console.log("Tres");
@@ -193,9 +193,31 @@ varias líneas
     // Invocación de una funcion
 
     estoEsUnaFuncion(); // los parentesis indican que se va a ejecutar la función.
+    estoEsUnaFuncion();
+    estoEsUnaFuncion();
+    estoEsUnaFuncion();
+    
+    // Función que devuelve un valor o retorna un valor
 
+    function unaFuncionQueDevuelveValor() {
+      console.log("Uno");
+      return 19;
+      console.log("Dos");
+      console.log("Tres");
+      return "La función ha retornado una cadena de texto";
+    }
+    // let valorDeFuncion = unaFuncionQueDevuelveValor();
+    // console.log(valorDeFuncion);
 
+    // Nota: Cuando una función dentro del cuerpo de la función se coloca un return con el valor a devolver, ignorará todo lo demás que este en el cuerpo de la función y retornará solo hasta donde este el primer return.
 
+    // Función que acepta parámetros
+
+    function saludando(nombre, edad){
+      console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+    }
+
+    saludando("Tony", 12);
 
 
   </script>

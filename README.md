@@ -305,32 +305,60 @@ Los template strings son una poderosa herramienta en JavaScript que simplifica l
 
 ### Booleans
 
-
 ### Null, Undefined, NaN
 
-Null = Valor primitivo que representa una variable que no tiene valor. Pero es un valor dado intencionalmente por el programador, para indicar que una variable no se le ha asignado un valor.
+**_Null_**: Valor primitivo que representa una variable que no tiene valor. Pero es un valor dado intencionalmente por el programador, para indicar que una variable no se le ha asignado un valor.
 
 ```js
 let nulo = null;
 console.log(nulo);
 ```
 
-**Undefined**: Es un valor primitivo que indica que una variable ha sido declarada pero no ha sido inicializada con ningún valor. Es un valor asignado por JavaScript, cuando detecta que una variable no tiene valor.
+**_Undefined_**: Es un valor primitivo que indica que una variable ha sido declarada pero no ha sido inicializada con ningún valor. Es un valor asignado por JavaScript, cuando detecta que una variable no tiene valor.
 
 ```js
 let indefinida;
 console.log(indefinida);
 ```
 
-**NaN (Not a Number)**:  Es un valor especial que representa el resultado de una operación matemática la cuál no se da mediante números válidos
+**_NaN (Not a Number)_**: Es un valor especial que representa el resultado de una operación matemática la cuál no se da mediante números válidos
 
 ```js
 let noEsUnNumero = "hola" * 3.7;
 console.log(noEsUnNumero);
 ```
+
+---
+
 ### Funciones
 
+Una **_función_** es un bloque de código, autocontenido, que se puede definir una vez y ejecutar en cualquier momento, con el fin de realizar una tarea especifica.
 
+Opcionalmente, una función puede aceptar parámetros y devolver un valor.
+
+Las funciones en JavaScript son objetos, un tipo especial de objeto
+
+Se dice que las funciones son ciudadanos de primera clase porque pueden asignarse a un valor, y pueden pasarse como argumentos y usarse como un valor de retorno.
+
+Ejemplo:
+
+```js
+function saludar() {
+  console.log("¡Hola, Mundo!");
+}
+
+saludar(); // Llama a la función para que se ejecute y muestre "¡Hola, Mundo!" en la consola.
+```
+
+En este ejemplo:
+
+**_function saludar()_** define una función llamada saludar.
+El código entre las llaves _**{}**_ es lo que hace la función.
+_**saludar()**_; es cómo llamas a la función para que haga su trabajo.
+
+Las funciones son muy útiles para organizar y reutilizar código en tus programas.
+
+---
 
 **Nota**:
 

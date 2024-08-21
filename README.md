@@ -360,6 +360,121 @@ Las funciones son muy útiles para organizar y reutilizar código en tus program
 
 ---
 
+### Funciones que acepta parámetros
+
+```js
+function saludando(nombre, edad) {
+  console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+}
+
+saludando("Tony", 12);
+
+// Hola mi nombre es Tony y tengo 12 años.
+```
+
+### Funciones que acepta parámetros por defectos
+
+En JavaScript, puedes inicializar los parámetros directamente en la declaración de la función. Esto se llama _parámetros por defecto_. Si no se pasa un valor cuando la función es llamada, los parámetros tomarán esos valores por defecto.
+
+```js
+function saludando(nombre = "Tony", edad = 12) {
+  console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+}
+
+saludando();
+
+// Hola mi nombre es Tony y tengo 12 años.
+```
+
+¿Cómo funciona esto?
+nombre = "Tony" y edad = 12: Aquí estás diciendo que si alguien llama a la función saludando sin proporcionar un nombre o una edad, la función usará "Tony" y 12 como valores predeterminados.
+
+saludando(); : Cuando llamas a la función sin pasar argumentos, se utilizan los valores por defecto, así que se imprimirá: "Hola, mi nombre es Tony y tengo 12 años."
+
+**_Ejemplo pasando valores diferentes_**
+
+```js
+saludando("Ana", 25); // Imprime: Hola, mi nombre es Ana y tengo 25 años.
+```
+
+En este caso, como pasas los valores "Ana" y 25, la función los usa en lugar de los valores por defecto.
+
+Esta es una forma práctica de hacer que tus funciones sean más flexibles y evitar errores si alguien olvida pasar un argumento.
+
+---
+
+### Funciones Declaradas vs Funciones Expresadas
+
+**_Función Declarada_**
+
+Una **_función declarada_** en JavaScript es una función que se define con la palabra clave function seguida del nombre de la función, los parámetros entre paréntesis y el cuerpo de la función entre llaves. Esta forma de declarar una función permite que la función esté disponible en cualquier parte del código, incluso antes de que se haya declarado, gracias a un comportamiento llamado "hoisting" (elevación).
+
+```js
+function saludar(nombre) {
+  return "Hola, " + nombre + "!";
+}
+
+console.log(saludar("Juan")); // "Hola, Juan!"
+```
+
+En este ejemplo, la función saludar está declarada y puede ser llamada en cualquier parte del código, incluso antes de la declaración.
+
+```js
+function funcionDeclarada() {
+  console.log(
+    "Esto es una función declarada, puede invocarse en cualquier parte de nuestro código incluso antes de que la función sea declarada"
+  );
+}
+
+funcionDeclarada();
+```
+
+---
+
+**_Función Expresada o Anónima_**
+
+Una **_función expresada (o función anónima)_** es una función que se define como una expresión en lugar de una declaración. A diferencia de las funciones declaradas, las funciones expresadas no tienen nombre (aunque pueden tenerlo) y se asignan a una variable o se pasan directamente como argumentos. Estas funciones no se elevan como las funciones declaradas, por lo que solo se pueden usar después de su definición.
+
+Las funciones anónimos son funciones que no tiene nombre y se asignan a una variable.
+
+Se recomienda al crear funciones declaradas usar variables constantes en vez de variables let.
+
+No pueden ser llamadas antes de ser creadas, como las funciones declaradas.
+
+Ejemplo de una función expresada o anónima:
+
+```js
+const saludar = function (nombre) {
+  return "Hola, " + nombre + "!";
+};
+
+console.log(saludar("Juan")); // "Hola, Juan!"
+```
+
+En este ejemplo, la función no tiene nombre y se asigna a la constante saludar. Luego, puedes llamar a saludar para ejecutar la función.
+
+```js
+const funcionExpresada = function () {
+  console.log(
+    "Esto es una fucnión expresada, es decir, una fucnión que se la ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá 'Cannot access 'funcionExpresada' before initialización'"
+  );
+};
+
+funcionExpresada();
+```
+
+Ejemplo de una función anónima como argumento:
+
+```js
+setTimeout(function () {
+  console.log("Esto se ejecuta después de 2 segundos");
+}, 2000);
+```
+
+Aquí, una función anónima se pasa como argumento a setTimeout, lo que significa que no tiene nombre y se ejecuta después de un retraso de 2 segundos.
+
+---
+
 **Nota**:
 
 Información adaptada para fines educativos mediante la creación de un resumen personal, el cual esta basado en las siguientes fuentes:

@@ -196,7 +196,7 @@ varias líneas
     estoEsUnaFuncion();
     estoEsUnaFuncion();
     estoEsUnaFuncion();
-    
+
     // Función que devuelve un valor o retorna un valor
 
     function unaFuncionQueDevuelveValor() {
@@ -213,11 +213,38 @@ varias líneas
 
     // Función que acepta parámetros
 
-    function saludando(nombre, edad){
+    function saludando(nombre, edad) {
       console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
     }
 
     saludando("Tony", 12);
+
+    // Hola mi nombre es Tony y tengo 12 años.
+
+    function saludando(nombre = "Tony", edad = 12) {
+      console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+    }
+
+    saludando();
+
+    // Hola mi nombre es Tony y tengo 12 años.
+
+    // Funciones Declaradas vs Funciones Expresadas
+
+    function funcionDeclarada() {
+      console.log("Esto es una función declarada, puede invocarse en cualquier parte de nuestro código incluso antes de que la función sea declarada")
+    }
+
+    funcionDeclarada();
+
+    // Función Expresada o Anónima
+
+    const funcionExpresada = function(){
+  console.log("Esto es una fucnión expresada, es decir, una fucnión que se la ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá 'Cannot access 'funcionExpresada' before initialización'")
+}
+
+funcionExpresada();
+
 
 
   </script>

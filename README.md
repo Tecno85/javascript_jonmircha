@@ -486,3 +486,5 @@ Información adaptada para fines educativos mediante la creación de un resumen 
 - https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA
 - https://chatgpt.com/
 - https://developer.mozilla.org/en-US/
+- https://github.com/mouredev/hello-javascript
+- https://www.youtube.com/live/hoULS5isDck?t=915s
